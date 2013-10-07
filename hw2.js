@@ -29,17 +29,29 @@
 	// Whether or not the light switch is on
 	// Whether or not Superman can fly
 
-	var myEmail = 'tbrunschwyler@montgomerycollege.edu', 
+var 
+	myEmail = 'tbrunschwyler@montgomerycollege.edu', 
 	myMajor = 'Computer Science', 
-	txtEditor = 'Open Office', 
+	textEditor = 'Open Office', 
 	zipCode = 20896,
 	pi =  3.14159,
-	bookCost = 10.5,
-	light = true,
-	superman = true;
+	// bookCost = 10.5,
+	bookCost = 10 * 1.05, // JG: This is more dynamic
+	lightIsOn = true,
+	supermanCanFly = true; // JG: Made superman and light variable names more descriptive
 
-	console.log(myEmail, myMajor, txtEditor, zipCode, pi, bookCost, light, superman);
+console.log(
+	myEmail, 
+	myMajor, 
+	textEditor, 
+	zipCode, 
+	pi, 
+	bookCost, 
+	lightIsOn, 
+	supermanCanFly
+);
 
+// JG: This approach of breaking up line by line is optional, but can help in the future.
 
 // Problem 3) Use the typeof operator to determine the data type of each variable like so.
 	// console.log(typeof myEmail);
@@ -47,24 +59,35 @@
 	// and so on…
 	// Make sure you have at least one string, at least one number, and at least one Boolean.
 
-console.log(typeof myEmail, typeof myMajor, typeof txtEditor, typeof zipCode, typeof pi, typeof bookCost, typeof light, typeof superman);
+// JG: Maybe having it written vertically would be easier to read
+console.log(
+	typeof myEmail, 
+	typeof myMajor, 
+	typeof txtEditor, 
+	typeof zipCode, 
+	typeof pi, 
+	typeof bookCost, 
+	typeof light, 
+	typeof supermanCanFly
+);
 
 // Problem 4) Create string variables to store the following string values.
 // Send all variables to the console.
 	// The dog's biting my shoes
 	// <a href="#">Some link</a>
 	// JavaScript is "easy" if you are good at it
-	var helpPlease = 'The dog\'s biting my shoes',
+var 
+	helpPlease = 'The dog\'s biting my shoes',
 	someLink =  '<a href=\"#\">Some link</a>',
 	easyJavaS = 'JavaScript is \"easy\" if you are good at it';
 
-	console.log(helpPlease, someLink, easyJavaS);
+console.log(helpPlease, someLink, easyJavaS);
 
 // Problem 5) Create an array of topics you would like to learn this semester.
 // Send this array to the console.
-	var topics = ['creating objects in JavaScript', 'reading and writing data', 'manipulating the gui or page style with javascript'];
+var topics = ['creating objects in JavaScript', 'reading and writing data', 'manipulating the gui or page style with javascript'];
 
-	console.log(topics);	
+console.log(topics);	
 
 
 // Problem 6) Send each item of the last array to the console. 
@@ -72,9 +95,9 @@ console.log(typeof myEmail, typeof myMajor, typeof txtEditor, typeof zipCode, ty
 	// console.log(myArray[0])
 	// console.log(myArray[1])
 	// and so on…
-	console.log(topics[0]);	
-	console.log(topics[1]);	
-	console.log(topics[2]);	
+console.log(topics[0]);	
+console.log(topics[1]);	
+console.log(topics[2]);	
 
 // Problem 7) Use the yourArrayVariable.length property to determine the size of your array.
 // Send the result to the console.
@@ -87,8 +110,10 @@ console.log(topics.length);
 	// a similar way to how we did it in class for the currency conversion
 	// calculator.
 
-	function clickMe(){
-		console.log('Leave me alone!');
-	}
+function clickMe() {
+	console.log('Leave me alone!');
+}
 
-	document.getElementById('clickMe').onclick = clickMe;
+document.getElementById('clickMe').onclick = clickMe;
+
+// JG: The biggest thing I did was brush up the use of white space to bring statements closer to the left and some parts easier to read.

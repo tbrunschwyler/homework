@@ -21,11 +21,12 @@
 	// 5 minus 5
 	// 5 times 5
 	// 5 divided by 5
-console.log(5+5);
-console.log(5-5);
-console.log(5*5);
-console.log(5/5);
+console.log(5 + 5);
+console.log(5 - 5);
+console.log(5 * 5);
+console.log(5 / 5);
 
+// JG: Note spaces around operators
 
 // Problem 2
 	// Cookie Thief problem
@@ -46,18 +47,17 @@ console.log(5/5);
 	// You can review Rebecca Murphey's post on how to avoid using "else if" by going here: http://rmurphey.com/blog/2012/12/10/js-conditionals/
 var cookieThief = "Mom";
 
-if(cookieThief ==="Dad"){
+if (cookieThief === "Dad"){
 	console.log("He's going to be in trouble!");
-}
-else if(cookieThief === "Mom"){
+} else if (cookieThief === "Mom"){
 	console.log("No big deal.");
-}
-else if(cookieThief === "Me"){
+} else if (cookieThief === "Me"){
 	console.log("No more cookies for you.");
-}
-else{
+} else{
 	console.log("Johnny did it.");
 }
+
+// JG: Note change in whitespace
 
 // Problem 3
 	// Boolean conditions
@@ -76,10 +76,9 @@ var day = "Thursday",
 	room = "HU 317",
 	time = "6:30 PM";
 
-if(day === "Thursday" && time === "6:30 PM" && room === "HU 317"){
+if (day === "Thursday" && time === "6:30 PM" && room === "HU 317") {
 	console.log("You are in CA276.");
-}
-else{
+} else {
 	console.log("You are in another class.");
 }
 
@@ -106,10 +105,11 @@ else{
 var bartSimpson = '';
 var i = 0;
 
-while(i < 10){
+while (i < 10){
 	bartSimpson += "I will not make fun of the teacher using JavaScript code. ";
-	i++;
+	i += 1;
 }
+
 console.log(bartSimpson);
 
 // Problem 5
@@ -117,7 +117,8 @@ console.log(bartSimpson);
 
 var bartSimpson = '';
 
-for(i = 0; i < 10; i++){
+for (i = 0; i < 10; i += 1){
 	bartSimpson += "I will not make fun of the teacher using JavaScript code. ";
 }
+
 console.log(bartSimpson);
