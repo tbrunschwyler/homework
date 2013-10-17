@@ -90,28 +90,30 @@
 		console.log("The cost of four $5 sub sandwiches is $" + 5 * 4);
 		console.log("The cost of a $75 dinner split evenly among 5 people is $" + 75 / 5);	
 		console.log(Math.round(0.1 * 0.2 * 100) / 100);
+		//JG: The formula below may be preferrable
+		console.log((0.1 * 0.2).toFixed(2));
 
 		// Problem 3
 		var yourEditor = "Sublime Text";
 
-		switch(yourEditor){
+		switch (yourEditor) {
 
-			case "Eclipse" :
+			case "Eclipse":
 				console.log("Java Developer");
 				break;
 
-			case "Aptana Studio" :
+			case "Aptana Studio":
 				console.log("Web Developer");
 				break;
 
-			case "Sublime Text" :
+			case "Sublime Text":
 				console.log("I am awesome");
 				break;
 
-			case "Notepad" :
+			case "Notepad":
 				console.log("Wrong editor");
 				break;
-			}
+		}
 		
 		// Problem 4
 		var i;
@@ -137,6 +139,9 @@
 
 		// The hardest part about JavaScript is the lack of immediate input on errors like variables with incorrect datatypes, broken brackets, or simply unrecognizable code. 
 		
+		//JG: Debugging is certainly an art form that gets better with practice. Have you tried the debugger statement to put break points in your code?
+
+		// debugger;
 	</script>
 
 </body>
