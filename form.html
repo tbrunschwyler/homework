@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Final Form Validation</title>
+		<style type="text/css">
+			body { font-family: Helvetica, sans-serif; font-size: 14px; }
+			
+			br { clear: both; }
+			
+			form div, input, label, select, textarea { display: block; float: left; font-weight: normal; }
+			
+			form div label, form div input { float: none; display: inline; }
+			
+			form div, label + input, label + textarea, label + select, label + textarea { margin-bottom: 15px; }
+			
+			form div br { clear: none; }
+						
+			input, textarea { font: 12px Helvetica, Arial; color: DarkBlue; }
+			
+			input[type="text"] { width: 250px; }
+			
+			input[type="email"] { width: 175px; }
+			
+			input[type="radio"], input[type="checkbox"] { padding-right: 5px; }
+			
+			label { width: 100px; }
+			
+			a:visited { color: Blue; }
+			
+			textarea { display: inline; height: 75px; width: 225px; }
+			
+			#form_wrapper { border: 1px solid Gray; border-radius: 8px; margin: 0 auto; padding: 10px 15px; width: 500px; }
+			
+			.hidden { display: none; }
+			
+			.dialog { border-radius: 8px; font-size: 18px; font-weight: bold; padding: 8px 0; margin: 0 auto 16px auto; text-align: center; width: 80%; }
+			
+			.warning { background-color: LightPink; color: DarkRed; }
+			
+			.status { background-color: LightGreen; color: Teal; }
+			
+			#error { background-color: LightPink; border-radius: 4px; color: DarkRed; padding: 8px; }
+		</style>
+	</head>
+	<body>
+		<div id="form_wrapper">
+			<form method="get" action="wk11.html">
+				<label for="first_name">First name</label>
+				<input type="text" id="first_name" name="first_name" class="required"><br>
+				<label for="last_name">Last name</label>
+				<input type="text" id="last_name" name="last_name" class="required"><br>
+				<label for="age">Age</label>
+				<input type="age" name="age"><br>
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" value=""><br>
+				<label for="experience">Experience Level</label>
+				<div>
+					<label><input type="radio" name="experience" name="experience">Beginner</label><br>
+					<label><input type="radio" name="experience">Intermediate</label><br>
+					<label><input type="radio" name="experience">Advanced</label><br>
+				</div>
+				<br>
+				<label for="bio">Bio</label>
+				<textarea id="bio" name="bio"></textarea><br>
+				<label for="website">Personal Website</label>
+				<input type="text" id="website" name="website"><br>
+				<label for="phone">Phone</label>
+				<input type="text" id="phone" name="phone"><br>
+				<label for="mealPref">Meal Preference</label>
+				<div>
+					<label><input type="radio" name="mealPref" value="aLaCarte">A La Carte</label><br>
+					<label><input type="radio" name="mealPref" value="glutonIntolerant">Gluton Intolerant meal</label><br>
+					<label><input type="radio" name="mealPref" value="kosher">Kosher</label><br>
+					<label><input type="radio" name="mealPref" value="jainMeal">Jain Meal</label><br>
+					<label><input type="radio" name="mealPref" value="muslim">Muslim</label><br>
+					<label><input type="radio" name="mealPref" value="vegetarian">Vegetarian</label><br>
+					<label><input type="radio" name="mealPref" value="vegan">Vegan</label><br>	
+				</div>
+				<br>
+				<label for="skills">Skills</label>
+				<div>
+					<label><input type="checkbox" name="skills" value="HTML">HTML</label><br>
+					<label><input type="checkbox" name="skills" value="CSS">CSS</label><br>
+					<label><input type="checkbox" name="skills" value="JavaScript">JavaScript</label><br>
+					<label><input type="checkbox" name="skills" value="jQuery">jQuery</label><br>
+					<label><input type="checkbox" name="skills" value="Dojo">Dojo</label><br>
+					<label><input type="checkbox" name="skills" value="Prototype">Prototype</label><br>
+					<label><input type="checkbox" name="skills" value="Flash">Flash</label><br>
+					<label><input type="checkbox" name="skills" value="Flex">Flex</label><br>
+				</div>
+				<br>
+
+				
+				<label>&nbsp;</label>
+				<div id="error" class="hidden"></div><br>
+				
+				<label>&nbsp;</label>
+				<input type="submit" value="Submit"><br>
+			</form>
+		</div>
+		<script src="Final.js"></script>
+		<script>
+		</script>
+	</body>
+</html>
