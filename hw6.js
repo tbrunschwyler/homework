@@ -47,11 +47,13 @@ console.log(document.querySelectorAll('ol li:nth-child(2), ul li:nth-child(2)'))
 
 // All elements that are empty
 
-console.log(document.querySelectorAll('*:empty'));
+//JG: The asterisk doesn't hurt, but you can safely leave it off
+console.log(document.querySelectorAll(':empty'));
 
 // All elements that are checked
 
-console.log(document.querySelectorAll('*:checked'));
+//JG: Same as the previous one
+console.log(document.querySelectorAll(':checked'));
 
 // All radio buttons
 
@@ -67,7 +69,7 @@ console.log(document.querySelectorAll('#names td:nth-child(2)'));
 
 // All elements with the class name "hidden" that are not form elements
 
-console.log(document.querySelectorAll('.hidden:not(Form)'));
+console.log(document.querySelectorAll('.hidden:not(form)'));
 
 // All even TRs that are descendants of a TBODY
 
