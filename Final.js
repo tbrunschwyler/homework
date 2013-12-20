@@ -121,7 +121,3 @@ form.addEventListener('submit', function(e) {
 		errorDiv.innerHTML = errors.join('<br>');
 	}
 }, false);
-
-
-firstName = document.getElementById("first_name");
-lastName = document.getElementById("last_name");
